@@ -8,9 +8,9 @@ class UppercaseRequest(BaseModel):
     word: str
 
 
-@app.get("/")
+@app.get("/ping")
 def hello_world():
-    return {"message": "Hello World"}
+    return {"message": "Pong!"}
 
 
 @app.post("/uppercase")
